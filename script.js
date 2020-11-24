@@ -19,5 +19,15 @@ function  ageInDays(){
         div.appendChild(image);
     
     }
+    //challenge 3 Rock, Paper, Scissor//
+    function rpsGame(yourChoice){
+        console.log(yourChoice);
+       var humanChoice,botChoice;
+       //humanChoice = yourchoice.id;
+      //botChoice=
+      //results=decideWinner(humanChoice,botChoice);//[0,1] humanlost| bot won
+      //message=finalMessage(results);//{'message':'You Won!','color':'green'}
+      rpsFrontEnd(yourChoice.id,botChoice,message);
+    }
     
     
