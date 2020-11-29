@@ -2,7 +2,7 @@ function  ageInDays(){
     var birthYear= prompt('What year were you born..good friend?');
     var ageInDayss = (2020-birthYear)*365;
     var h1 = document.createElement('h1');
-    var textAnswer = document.createTextNode('You are' +ageInDayss +'days old.');
+    var textAnswer = document.createTextNode('You are' + " "  +  ageInDayss + 'days old.');
     h1.setAttribute('id', 'ageInDays');
     h1.appendChild(textAnswer);
     document.getElementById('flex-box-result').appendChild(h1);
@@ -37,6 +37,7 @@ function  ageInDays(){
 
        rpsFrontEnd(yourChoice.id,botChoice,message);
     }
+
 function randToRpsInt(){
     return Math.floor(Math.random()*3);
 }
@@ -88,4 +89,29 @@ function rpsFrontEnd(humanImageChoice,botImageChoice,finalMessage){
     document.getElementById('flex-box-rps-div').appendChild(humanDiv);
     document.getElementById('flex-box-rps-div').appendChild(messageDiv);
     document.getElementById('flex-box-rps-div').appendChild(botDiv);
+
 }
+
+//challange 4: change the color of all button
+var all_buttons = document.getElementsByTagName('button');
+console.log(all_buttons);
+
+var copyAllButtons=[];
+for (let i=0; i<all_buttons.length; i++){
+    copyAllButtons.push(all_buttons[i]);
+}
+function buttonColorChange(buttonThingy){
+    if(buttonThingy.value==='red'){
+        buttonsRed();
+    }else if(buttonThingy.value==='green'){
+        buttonsGreen();
+    }else if(buttonThingy.value==='reset'){
+        buttonColorReset();
+    }else if (buttonThingy.value==='random'){
+        randomColors();
+    }
+}
+
+
+
+
