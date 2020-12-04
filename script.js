@@ -142,7 +142,11 @@ function randomColors(){
 }
 
 }
+<<<<<<< HEAD
 //challenge 5: Blackjack Game
+=======
+//Challenge 5:Blackjack Game
+>>>>>>> challenge-5
 
 
 
