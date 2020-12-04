@@ -142,6 +142,7 @@ function randomColors(){
 }
 
 }
+//challenge 5: Blackjack Game
 
 
 
