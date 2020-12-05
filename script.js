@@ -143,12 +143,12 @@ function randomColors(){
 
 }
 
+//Challenge 5 black jack game
 document.querySelector('#blackjack-hit-button').addEventListener('click',blackjackHit);
 
 function blackjackHit(){
     alert('Ouch,You just clicked me!');
 }
-
 
 
 
