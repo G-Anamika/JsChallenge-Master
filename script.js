@@ -226,6 +226,7 @@ function showScore(activePlayer){
     }
 }
 
+//this is just for testing the coflict
 
 
 
