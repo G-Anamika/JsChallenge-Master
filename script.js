@@ -161,7 +161,6 @@ document.querySelector('#blackjack-deal-button').addEventListener('click',blackj
 
 
 function blackjackHit(){
-<<<<<<< HEAD
     alert('Ouch,You just clicked me!');
 }
 
