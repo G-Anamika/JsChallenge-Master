@@ -163,79 +163,12 @@ document.querySelector('#blackjack-deal-button').addEventListener('click',blackj
 function blackjackHit(){
 <<<<<<< HEAD
     alert('Ouch,You just clicked me!');
-=======
-    let card = randomCard();
-    console.log(card);
-    showcard(card,YOU);
-    updateScore(card,YOU);
-    showScore(YOU);
-    console.log(YOU['score']);
-}
-
-function randomCard(){
-    let randomIndex = Math.floor(Math.random()*13);
-    return blackjackGame['cards'][randomIndex];
-}
-
-function showcard(card,activePlayer){
-    if(activePlayer['score']<=21){
-        let cardImage=document.createElement('img');
-        cardImage.src=`/blackjack_assets/images/${card}.png`;
-        document.querySelector(activePlayer['div']).appendChild(cardImage);
-        hitSound.play();
-    }
-}
-function blackjackDeal(){
-    let yourImages =document.querySelector('#your-box').querySelectorAll('img');
-    let dealerImages =document.querySelector('#dealer-box').querySelectorAll('img');
-    
-    for(i=0; i< yourImages.length; i++){
-        yourImages[i].remove();
-    }
-    for(i=0; i< dealerImages.length; i++){
-        dealerImages[i].remove();
-    }
-    YOU['score']= 0;
-    DEALER['score']= 0;
-    document.querySelector('#your-blackjack-result').textContent= 0;
-    document.querySelector('#dealer-blackjack-result').textContent= 0;
-
-    document.querySelector('#your-blackjack-result').style.color= '#ffffff';
-    document.querySelector('#dealer-blackjack-result').style.color= '#ffffff';
-
-
-}
-function updateScore(card,activePlayer){
-    if(card ==='A'){
-    // If adding 11 keeps me below 21,add 11.otherwise add 1
-        if (activePlayer['score']+ blackjackGame['cardsMap'][card][1]<= 21){
-            activePlayer['score']+= blackjackGame['cardsMap'][card][1];
-        }else{
-            activePlayer['score']+= blackjackGame['cardsMap'][card][0];
-        }
-
-    }else{
-            activePlayer['score']+=blackjackGame['cardsMap'][card];
-        }
-}
-
-function showScore(activePlayer){
-    if(activePlayer['score'] >21){
-        document.querySelector(activePlayer['scoreSpan']).textContent ='Bust!';
-        document.querySelector(activePlayer['scoreSpan']).style.color ='red';
-
-    }else{
-    document.querySelector(activePlayer['scoreSpan']).textContent = activePlayer['score'];
-    }
->>>>>>> challenge-5
 }
 
 
 
 
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> challenge-5
+
