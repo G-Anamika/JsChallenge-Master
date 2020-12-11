@@ -166,14 +166,6 @@ document.querySelector('#blackjack-deal-button').addEventListener('click',blackj
 
 
 function blackjackHit(){
-<<<<<<< HEAD
-    alert('Ouch,You just clicked me!');
-}
-
-
-
-
-=======
     let card = randomCard();
     console.log(card);
     showCard(card,YOU);
@@ -299,7 +291,6 @@ function showResult(winner){
     document.querySelector('#blackjack-result').textContent= message;
     document.querySelector('#blackjack-result').style.color= messageColor;
 }
->>>>>>> challenge-5
 
 
 
